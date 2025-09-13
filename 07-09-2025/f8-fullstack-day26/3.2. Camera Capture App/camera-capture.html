@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Camera Capture App</title>
+    <link rel="stylesheet" href="camera-capture.css" />
+  </head>
+  <body>
+    <h1>📷 Camera Capture App</h1>
+
+    <div class="controls">
+      <button id="startCamera">Start Camera</button>
+      <button id="stopCamera">Stop Camera</button>
+      <button id="takePhoto">Take Photo</button>
+      <button id="downloadPhoto">Download Photo</button>
+    </div>
+
+    <div class="video-container">
+      <video id="video" autoplay></video>
+    </div>
+
+    <div class="photo-container">
+      <canvas id="canvas" hidden></canvas>
+      <img id="photo" alt="Ảnh đã chụp sẽ hiển thị ở đây" />
+    </div>
+
+    <p id="status"></p>
+
+    <script src="camera-capture.js"></script>
+  </body>
+</html>

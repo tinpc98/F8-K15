@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Clipboard Manager</title>
+    <link rel="stylesheet" href="clipboard-manager.css" />
+  </head>
+  <body>
+    <h1>Clipboard Manager</h1>
+
+    <section>
+      <h2>Copy to Clipboard</h2>
+      <textarea
+        id="copyText"
+        placeholder="Nhập nội dung cần copy..."
+      ></textarea>
+      <br />
+      <button id="copyBtn">Copy</button>
+    </section>
+
+    <section>
+      <h2>Paste from Clipboard</h2>
+      <textarea
+        id="pasteText"
+        placeholder="Nội dung được paste sẽ hiện ở đây..."
+      ></textarea>
+      <br />
+      <button id="pasteBtn">Paste</button>
+    </section>
+
+    <p id="status"></p>
+
+    <script src="clipboard-manager.js"></script>
+  </body>
+</html>
